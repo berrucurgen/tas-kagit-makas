@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: hsla(295, 65%, 39%, 0.281);
+  overflow: hidden;
+}
+
+.game {
+min-height: 100vh;
+opacity: 0;
+transition: opacity 0.7s ease-in;
+}
+
+h2 {
+    color: #0f0f0f;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.score {
+min-height: 10vh;
+width: 30vw;
+margin: 20px auto;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+color: #0f0f0f;
+font-size: 1.3rem;
+background: rgba(hsl(0, 0%, 3%));
+border-radius: 10px;
+}
+.display-score {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-score, 
+.computer-score {
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.buttons {
+    min-height: 10vh;
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    background: #7c797965;
+    border: 0.2px outset hsl(0, 5%, 62%);
+    color: rgb(10, 10, 10);
+    padding: 3rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    outline: none;
+}
+
+button:hover {
+    background: rgba(hsl(300, 7%, 97%));
+}
+
+.images {
+    min-height: 20vh;
+    min-width: 20vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+img {
+    height: 300px;
+}
+
+.modal {
+    position: absolute;
+    top:0;
+    left:0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: rgba(255, 127, 80, 0.541); 
+    transition: opacity 0.8s ease-in;
+    pointer-events: all;
+}
+
+.modal button {
+    font-size: 2rem;
+}
+
+.reveal {
+    opacity: 1;
+}
+
+.disablebuttons {
+    pointer-events: none;
+}
+
+.move {
+    animation: shake 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    from
+    {
+        transform: translateY(50px);
+    }
+    to
+    {
+        transform: translateY(0px);
+    }
+}
