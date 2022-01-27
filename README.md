@@ -24,5 +24,4 @@ Makasın kazanma ihtimali karşısına kağıt gelmesidir.
 
 
 
-
 İyi eğlenceler.
