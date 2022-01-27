@@ -22,4 +22,9 @@ Makasın kazanma ihtimali karşısına kağıt gelmesidir.
 
 
 
+
+
+
+file:///C:/Users/Berru/Desktop/repo/tas-kagit-makas/index.html
+
 İyi eğlenceler.
